@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/user_reg_background"
+    tools:context=".USER.CreateAccountActivity"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/etFirstname"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:alpha=".4"
+        android:background="@color/white"
+        android:hint="@string/createaccount_firstname"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="14dp"/>
+
+    <EditText
+        android:id="@+id/etLastname"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:alpha=".4"
+        android:background="@color/white"
+        android:hint="@string/createaccount_lastname"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:paddingStart="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="14dp"
+        />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:alpha=".4"
+        android:background="@color/white"
+        android:hint="@string/email"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="14dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:alpha=".4"
+        android:background="@color/white"
+        android:hint="@string/password"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:paddingStart="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
+        />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_corners"
+        android:textColor="@color/black"
+        android:text="@string/loginSubmit"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

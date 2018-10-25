@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/user_background"
+    tools:context=".USER.LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/logo"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:alpha=".4"
+        android:background="@color/white"
+        android:hint="@string/email"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColorHint="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="14dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:alpha=".4"
+        android:background="@color/white"
+        android:hint="@string/password"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:paddingStart="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+       />
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="italic|bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/userForgotPassword"
+        android:layout_marginBottom="34dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_corners"
+        android:textColor="@color/black"
+        android:text="@string/loginSubmit"
+        android:textAllCaps="false"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:textStyle="italic|bold"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/userDoNotHaveAccount"/>
+        <TextView
+            android:id="@+id/tvClickHere"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/link"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/userCreateAccount"/>
+    </LinearLayout>
+</LinearLayout>

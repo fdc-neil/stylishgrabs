@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">stylishgrabs</string>
+    <string name="splashscreen_title">Grab Your Style</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="loginSubmit">Submit</string>
+    <string name="userDoNotHaveAccount">Do not have an account yet?</string>
+    <string name="userCreateAccount">Click here!</string>
+    <string name="email">Email</string>
+    <string name="userForgotPassword">Forgot Password?</string>
+
+
+    <!--CREATE ACCOUNT ACTIVITY-->
+    <string name="createaccount_firstname">First Name</string>
+    <string name="createaccount_lastname">Last Name</string>
+
+
+    <!--MAIN ACTIVITY-->
+    <string name="mainActivityWelcome">STYLISHGRABS\nFashion You\'ll love\n\nWelcome to our store where you can find trendy and affordable outfits for your everyday need.</string>
+    <string name="profileName">Neil Marjun Martinez</string>
+    <string name="profileAddress">Maslog, Danao City</string>
+    <string name="sendMessage">Send Message</string>
+
+</resources>

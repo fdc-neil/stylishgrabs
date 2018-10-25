@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_background"
+    tools:context=".ProfileActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civProfilePhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@mipmap/user"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="60dp"
+           />
+
+        <TextView
+            android:id="@+id/tvProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/profileName"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tvProfileAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/profileAddress"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            />
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:alpha=".3"
+            card_view:cardCornerRadius="4dp"
+            android:background="@color/white"
+            android:layout_marginBottom="20dp">
+
+        </android.support.v7.widget.CardView>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_corners_pink"
+            android:text="@string/sendMessage"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.michaldrabik.tapbarmenulib.TapBarMenu
+            android:id="@+id/tapBarMenu"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="14dp"
+            app:tbm_backgroundColor="@color/black"
+            >
+
+            <ImageView
+                android:id="@+id/homeMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/house"
+                tools:visibility="visible"
+                />
+
+            <ImageView
+                android:id="@+id/cartMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/shopping"
+                tools:visibility="visible"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:id="@+id/phoneMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/contact"
+                tools:visibility="visible"
+                />
+
+            <ImageView
+                android:id="@+id/resumeMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:src="@mipmap/resume"
+                tools:visibility="visible"
+                />
+
+        </com.michaldrabik.tapbarmenulib.TapBarMenu>
+    </FrameLayout>
+</RelativeLayout>
