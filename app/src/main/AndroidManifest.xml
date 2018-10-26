@@ -11,20 +11,23 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".SplashScreen" />
-        <activity android:name=".USER.LoginActivity">
+
+
+
+
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".USER.LoginActivity" />
         <activity android:name=".USER.CreateAccountActivity" />
         <activity android:name=".MainActivity" />
-        <activity
-            android:name=".CAROUSEL.ImageDetailsActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".USER.ProfileActivity" />
+        <activity android:name=".USER.EditProfileActivity" />
+        <activity android:name=".AboutUsActivity"></activity>
     </application>
 
 </manifest>

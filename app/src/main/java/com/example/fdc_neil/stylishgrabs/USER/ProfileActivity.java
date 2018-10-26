@@ -1,4 +1,4 @@
-package com.example.fdc_neil.stylishgrabs;
+package com.example.fdc_neil.stylishgrabs.USER;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.fdc_neil.stylishgrabs.AboutUsActivity;
+import com.example.fdc_neil.stylishgrabs.MainActivity;
+import com.example.fdc_neil.stylishgrabs.R;
 import com.michaldrabik.tapbarmenulib.TapBarMenu;
 
 import butterknife.BindView;
@@ -30,7 +33,7 @@ public class ProfileActivity extends AppCompatActivity {
         tapBarMenu.toggle();
     }
 
-    @OnClick({R.id.homeMenu, R.id.cartMenu, R.id.phoneMenu, R.id.resumeMenu})
+    @OnClick({R.id.homeMenu, R.id.cartMenu, R.id.infoMenu})
     public void onMenuItemClick(View view) {
         tapBarMenu.close();
         switch (view.getId()) {
@@ -41,12 +44,8 @@ public class ProfileActivity extends AppCompatActivity {
                 Log.i("TAG", "Item 2 selected");
                 Toast.makeText(this, "Item 2", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.phoneMenu:
-                Log.i("TAG", "Item 3 selected");
-                Toast.makeText(this, "Item 3", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.resumeMenu:
-                Toast.makeText(this, "Item 3", Toast.LENGTH_SHORT).show();
+            case R.id.infoMenu:
+                startActivity(new Intent(ProfileActivity.this, AboutUsActivity.class));
                 break;
         }
     }

@@ -1,38 +1,32 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/white"
-    >
-
-    <android.support.v4.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+    android:background="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="200dp"
                 android:id="@+id/llHeader"
                 android:orientation="horizontal"
                 android:background="@drawable/white_stripes_background">
                 <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="125dp"
+                    android:layout_width="130dp"
+                    android:layout_height="135dp"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
+                    android:layout_margin="15dp"
                     android:src="@mipmap/logo"
                     />
                 <TextView
-                    android:id="@+id/tvForgotPassword"
+                    android:id="@+id/tvStylishGrabsHeader"
                     android:layout_width="match_parent"
-                    android:layout_height="125dp"
+                    android:layout_height="130dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:fontFamily="monospace"
@@ -45,86 +39,246 @@
                     android:layout_marginEnd="10dp"/>
             </LinearLayout>
 
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:descendantFocusability="blocksDescendants"
+                app:fastScrollEnabled="false"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:id="@+id/SliderDots"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="0dp"/>
+
             <android.support.v4.view.ViewPager
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_gravity="center" />
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/viewpager_background"/>
 
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvStripedShirts"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvItemsTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="22sp"
+                        android:gravity="center"
+                        android:textStyle="bold|italic"
+                        android:text="@string/contactus"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="bottom"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/ivItems"
+                            android:layout_width="120dp"
+                            android:layout_height="195dp"
+                            android:layout_margin="10dp"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:src="@drawable/yellow_stripes"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <ImageView
+                                    android:id="@+id/ivPhoneNumber"
+                                    android:layout_width="55dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:scaleType="fitCenter"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/phone_book"
+                                    />
+                                <TextView
+                                    android:id="@+id/tvPhoneNumber"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="monospace"
+                                    android:text="@string/phoneNumber"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:padding="5dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/ivFacebook"
+                                    android:layout_width="55dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:scaleType="fitCenter"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/facebook"
+                                    />
+                                <TextView
+                                    android:id="@+id/tvFacebook"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="monospace"
+                                    android:text="@string/facebookpage"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    android:padding="5dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="10dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:id="@+id/ivGmail"
+                                    android:layout_width="55dp"
+                                    android:layout_height="40dp"
+                                    android:layout_margin="10dp"
+                                    android:scaleType="fitCenter"
+                                    android:layout_gravity="center"
+                                    android:src="@mipmap/gmail"
+                                    />
+                                <TextView
+                                    android:id="@+id/tvGmail"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:fontFamily="monospace"
+                                    android:text="@string/gmail"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:padding="5dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginEnd="10dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.michaldrabik.tapbarmenulib.TapBarMenu
+                        android:id="@+id/tapBarMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        app:tbm_backgroundColor="@color/black"
+                        app:tbm_buttonPosition="center">
+                        <ImageView
+                            android:id="@+id/homeMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:src="@mipmap/house"
+                            tools:visibility="visible"
+                            />
+
+                        <ImageView
+                            android:id="@+id/cartMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:src="@mipmap/store"
+                            tools:visibility="visible"
+                            />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            />
+
+                        <ImageView
+                            android:id="@+id/infoMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:src="@mipmap/info"
+                            tools:visibility="visible"
+                            />
+
+                        <ImageView
+                            android:id="@+id/profileMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:src="@mipmap/users"
+                            tools:visibility="visible"
+                            />
+                    </com.michaldrabik.tapbarmenulib.TapBarMenu>
+                </LinearLayout>
+            </FrameLayout>
         </LinearLayout>
-
-
-    </android.support.v4.widget.NestedScrollView>
-
-
-
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-
-        <com.michaldrabik.tapbarmenulib.TapBarMenu
-            android:id="@+id/tapBarMenu"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="14dp"
-            app:tbm_backgroundColor="@color/black"
-            >
-
-            <ImageView
-                android:id="@+id/homeMenu"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:src="@mipmap/house"
-                tools:visibility="visible"
-                />
-
-            <ImageView
-                android:id="@+id/cartMenu"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:src="@mipmap/shopping"
-                tools:visibility="visible"
-                />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                />
-
-            <ImageView
-                android:id="@+id/phoneMenu"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:src="@mipmap/contact"
-                tools:visibility="visible"
-                />
-
-            <ImageView
-                android:id="@+id/profileMenu"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:src="@mipmap/users"
-                tools:visibility="visible"
-                />
-
-        </com.michaldrabik.tapbarmenulib.TapBarMenu>
-    </FrameLayout>
-</RelativeLayout>
+    </ScrollView>
 
 

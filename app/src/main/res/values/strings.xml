@@ -3,7 +3,7 @@
     <string name="splashscreen_title">Grab Your Style</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="loginSubmit">Submit</string>
+    <string name="loginSubmit">Log in</string>
     <string name="userDoNotHaveAccount">Do not have an account yet?</string>
     <string name="userCreateAccount">Click here!</string>
     <string name="email">Email</string>
@@ -20,5 +20,31 @@
     <string name="profileName">Neil Marjun Martinez</string>
     <string name="profileAddress">Maslog, Danao City</string>
     <string name="sendMessage">Send Message</string>
+    <string name="stripeshirts">STRIPED SHIRTS</string>
+    <string name="sweatshorts">SWEAT SHORTS</string>
+    <string name="trousers">TROUSERS</string>
+    <string name="joggerpants">JOGGER PANTS</string>
+    <string name="polo">POLO</string>
+    <string name="aboutus">About Us</string>
+    <string name="aboutusdescription">Style-centered\n\nstylishgrabs.ph is your go-to source for styles influenced by the latest fashions with an added flair. We aim to inspire the our customers to be the best version of themselves and to be confident in their own skin - and of course, their outfits.</string>
+    <string name="contactus">Contact Us</string>
+    <string name="phoneNumber">+639081680079</string>
+    <string name="facebookpage">stylishgrabs.ph</string>
+    <string name="gmail">stylishgrabs@gmail.com</string>
+    <string name="subtitle">Style-centered</string>
+    <string name="description">stylishgrabs.ph is your go-to source for styles influenced by the latest fashions with an added flair.</string>
+    <string name="mission">We aim to inspire the our customers to be the best version of themselves and to be confident in their own skin - and of course, their outfits.</string>
+    <string name="missiontitle">MISSION</string>
+    <string name="visiontitle">VISION</string>
+    <string name="vision">Our vision is fast-paced, forward-thinking and fashion-centered at its core, and all of our products reflect these ideals. We invite you to browse our site to find just what you have been looking for. Look good, feel good, shop stylishgrabs.ph today.</string>
+    <string name="shopnow">shop now</string>
+    <string name="age">Age</string>
+    <string name="emailExample">neilmarjun@gmail.com</string>
+    <string name="passwordExample">amazing</string>
+    <string name="ageExample">20</string>
+    <string name="phoneNumberExample">+639081680079</string>
+    <string name="addressExample">Maslog, Danao City</string>
+    <string name="nameExample">Neil Marjun Martinez</string>
+    <string name="profileSave">Save</string>
 
 </resources>
