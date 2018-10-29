@@ -19,6 +19,6 @@ public class AboutUsActivity extends AppCompatActivity {
 
     @OnClick(R.id.btnShopNow)
     void shopNow(){
-        startActivity(new Intent(AboutUsActivity.this, MainActivity.class));
+        startActivity(new Intent(AboutUsActivity.this, ShopActivity.class));
     }
 }

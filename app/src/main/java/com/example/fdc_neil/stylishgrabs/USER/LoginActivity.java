@@ -26,6 +26,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @OnClick(R.id.btnSubmit)
     void login(){
+        finish();
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
     }
 }

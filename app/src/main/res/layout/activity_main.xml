@@ -1,14 +1,21 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:focusableInTouchMode="true"
     android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,7 +51,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
-                android:descendantFocusability="blocksDescendants"
                 app:fastScrollEnabled="false"
                 android:scrollbars="vertical" />
 
@@ -69,14 +75,14 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/cvStripedShirts"
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardElevation="15dp"
                 >
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <TextView
                         android:id="@+id/tvItemsTitle"
@@ -90,16 +96,30 @@
                         android:layout_marginTop="5dp"
                         android:layout_gravity="bottom"
                         />
+
+                    <com.mapbox.mapboxsdk.maps.MapView
+                        android:id="@+id/mapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_margin="10dp"
+                        mapbox:mapbox_cameraTargetLat="10.4819"
+                        mapbox:mapbox_cameraTargetLng="124.0182"
+                        android:background="@color/black"
+                        mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"
+                        mapbox:mapbox_cameraZoom="11" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <ImageView
                             android:id="@+id/ivItems"
-                            android:layout_width="120dp"
-                            android:layout_height="195dp"
-                            android:layout_margin="10dp"
-                            android:scaleType="fitCenter"
+                            android:layout_width="110dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="10dp"
+                            android:paddingBottom="20dp"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="fitXY"
                             android:layout_gravity="center"
                             android:src="@drawable/yellow_stripes"
                             />
@@ -195,19 +215,11 @@
                                     android:textStyle="bold"
                                     android:layout_marginEnd="10dp"/>
                             </LinearLayout>
-
                         </LinearLayout>
-
-
-
-
-
-
-
-
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+
 
 
             <FrameLayout
@@ -280,5 +292,6 @@
             </FrameLayout>
         </LinearLayout>
     </ScrollView>
+</FrameLayout>
 
 

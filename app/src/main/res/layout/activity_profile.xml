@@ -93,7 +93,7 @@
 
 
         <com.santalu.widget.MaskEditText
-            android:id="@+id/et_phone_number"
+            android:id="@+id/etPhoneNumber"
             android:layout_width="290dp"
             android:layout_height="40dp"
             android:drawablePadding="10dp"
@@ -103,21 +103,32 @@
             android:drawableStart="@drawable/phone_number"
             android:background="@color/black"
             android:inputType="phone"
-            app:met_mask="+632 ### ### ## ##"/>
+            app:met_mask="+63 ### ### ####"/>
 
         <Button
-            android:id="@+id/btnSave"
+            android:id="@+id/btnEditSave"
             android:layout_width="290dp"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
             android:textColor="@color/white"
             android:background="@color/black"
             android:text="@string/profileSave"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btnBackToHome"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:text="@string/backHome"
             android:textAllCaps="false"/>
     </LinearLayout>
 
 
-    <FrameLayout
+   <!-- <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -174,5 +185,5 @@
 
 
         </com.michaldrabik.tapbarmenulib.TapBarMenu>
-    </FrameLayout>
+    </FrameLayout>-->
 </LinearLayout>

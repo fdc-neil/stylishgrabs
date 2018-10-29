@@ -45,6 +45,13 @@
     <string name="phoneNumberExample">+639081680079</string>
     <string name="addressExample">Maslog, Danao City</string>
     <string name="nameExample">Neil Marjun Martinez</string>
-    <string name="profileSave">Save</string>
+    <string name="profileSave">Edit</string>
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="backHome">Back to Home</string>
+    <string name="searchItemHere">Search here...</string>
+    <string name="numNotification">10</string>
+    <string name="browse">browse</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoic3R5bGlzaGdyYWJzIiwiYSI6ImNqbnR6cnlwaTA1d24zcm1qd2VqenM2ZnkifQ.5MCNUZSg8BJOchgOnJyPQg</string>
 
 </resources>
