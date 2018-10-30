@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "821866262589",
+    "firebase_url": "https://stylishgrabs-66e05.firebaseio.com",
+    "project_id": "stylishgrabs-66e05",
+    "storage_bucket": "stylishgrabs-66e05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821866262589:android:49fb8c4141f9a51c",
+        "android_client_info": {
+          "package_name": "com.example.fdc_neil.stylishgrabs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821866262589-u69frrojkhjul0ehirtrd142d9rocg05.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fdc_neil.stylishgrabs",
+            "certificate_hash": "bef250da7a727eee641d1d23b0b475b1cf63b6ca"
+          }
+        },
+        {
+          "client_id": "821866262589-ncm1jjll46nfkls8isglpluelgdnfkr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDlXzpBnavebB7Ct3xkR3O2ym979mf1ag"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821866262589-ncm1jjll46nfkls8isglpluelgdnfkr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

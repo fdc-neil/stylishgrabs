@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">stylishgrabs</string>
     <string name="splashscreen_title">Grab Your Style</string>
+
+    <!-- LOGIN ACTIVITY-->
+    <string name="loginFieldsEmpty">Please fill all fields.</string>
+    <string name="loginFailedTitle">Login Failed</string>
+    <string name="ok">OKAY</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="loginSubmit">Log in</string>
@@ -9,28 +14,40 @@
     <string name="email">Email</string>
     <string name="userForgotPassword">Forgot Password?</string>
 
-
     <!--CREATE ACCOUNT ACTIVITY-->
     <string name="createaccount_firstname">First Name</string>
     <string name="createaccount_lastname">Last Name</string>
+    <string name="createaccount_errortitle">Create Account Failed</string>
+    <string name="createaccount_emptyfields">Please fill all fields.</string>
 
 
     <!--MAIN ACTIVITY-->
     <string name="mainActivityWelcome">STYLISHGRABS\nFashion You\'ll love\n\nWelcome to our store where you can find trendy and affordable outfits for your everyday need.</string>
-    <string name="profileName">Neil Marjun Martinez</string>
-    <string name="profileAddress">Maslog, Danao City</string>
-    <string name="sendMessage">Send Message</string>
     <string name="stripeshirts">STRIPED SHIRTS</string>
     <string name="sweatshorts">SWEAT SHORTS</string>
     <string name="trousers">TROUSERS</string>
     <string name="joggerpants">JOGGER PANTS</string>
     <string name="polo">POLO</string>
-    <string name="aboutus">About Us</string>
-    <string name="aboutusdescription">Style-centered\n\nstylishgrabs.ph is your go-to source for styles influenced by the latest fashions with an added flair. We aim to inspire the our customers to be the best version of themselves and to be confident in their own skin - and of course, their outfits.</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoic3R5bGlzaGdyYWJzIiwiYSI6ImNqbnR6cnlwaTA1d24zcm1qd2VqenM2ZnkifQ.5MCNUZSg8BJOchgOnJyPQg</string>
     <string name="contactus">Contact Us</string>
     <string name="phoneNumber">+639081680079</string>
     <string name="facebookpage">stylishgrabs.ph</string>
     <string name="gmail">stylishgrabs@gmail.com</string>
+
+    <!--PROFILE ACTIVITY-->
+    <string name="profileName">Neil Marjun Martinez</string>
+    <string name="profileAddress">Maslog, Danao City</string>
+    <string name="emailExample">neilmarjun@gmail.com</string>
+    <string name="passwordExample">amazing</string>
+    <string name="phoneNumberExample">+639081680079</string>
+    <string name="addressExample">Maslog, Danao City</string>
+    <string name="nameExample">Neil Marjun Martinez</string>
+    <string name="profileSave">Edit</string>
+    <string name="backHome">Back to Home</string>
+    <string name="signup">Create</string>
+
+    <!--ABOUT US ACTIVITY-->
+    <string name="aboutusdescription">Style-centered\n\nstylishgrabs.ph is your go-to source for styles influenced by the latest fashions with an added flair. We aim to inspire the our customers to be the best version of themselves and to be confident in their own skin - and of course, their outfits.</string>
     <string name="subtitle">Style-centered</string>
     <string name="description">stylishgrabs.ph is your go-to source for styles influenced by the latest fashions with an added flair.</string>
     <string name="mission">We aim to inspire the our customers to be the best version of themselves and to be confident in their own skin - and of course, their outfits.</string>
@@ -38,20 +55,19 @@
     <string name="visiontitle">VISION</string>
     <string name="vision">Our vision is fast-paced, forward-thinking and fashion-centered at its core, and all of our products reflect these ideals. We invite you to browse our site to find just what you have been looking for. Look good, feel good, shop stylishgrabs.ph today.</string>
     <string name="shopnow">shop now</string>
-    <string name="age">Age</string>
-    <string name="emailExample">neilmarjun@gmail.com</string>
-    <string name="passwordExample">amazing</string>
-    <string name="ageExample">20</string>
-    <string name="phoneNumberExample">+639081680079</string>
-    <string name="addressExample">Maslog, Danao City</string>
-    <string name="nameExample">Neil Marjun Martinez</string>
-    <string name="profileSave">Edit</string>
-    <string name="edit">Edit</string>
-    <string name="save">Save</string>
-    <string name="backHome">Back to Home</string>
+    <string name="aboutus">About Us</string>
+
+    <!--SHOP ACTIVITY-->
+    <string name="sendMessage">Send Message</string>
     <string name="searchItemHere">Search here...</string>
     <string name="numNotification">10</string>
     <string name="browse">browse</string>
-    <string name="mapbox_access_token">pk.eyJ1Ijoic3R5bGlzaGdyYWJzIiwiYSI6ImNqbnR6cnlwaTA1d24zcm1qd2VqenM2ZnkifQ.5MCNUZSg8BJOchgOnJyPQg</string>
+    <string name="home">Home</string>
+    <string name="store_title">Store</string>
+    <string name="home_title">Home</string>
+    <string name="info_title">Info</string>
+    <string name="profile_title">Profile</string>
+    <string name="price">250.00</string>
+
 
 </resources>

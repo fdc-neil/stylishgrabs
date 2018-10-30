@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.fdc_neil.stylishgrabs.AboutUsActivity;
@@ -26,6 +27,13 @@ public class ProfileActivity extends AppCompatActivity {
     /*@BindView(R.id.tapBarMenu)
     TapBarMenu tapBarMenu;
 */
+
+    @BindView(R.id.tvProfileName)
+    TextView tvProfileName;
+
+    @BindView(R.id.tvProfileAddress)
+    TextView tvProfileAddress;
+
     @BindView(R.id.etFullname)
     EditText etFullname;
 
@@ -84,7 +92,6 @@ public class ProfileActivity extends AppCompatActivity {
                     btnEditSave.setText("Save");
                     enableFields();
                 }
-
                 break;
             case R.id.btnBackToHome:
                 startActivity(new Intent(ProfileActivity.this, MainActivity.class));

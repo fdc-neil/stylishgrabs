@@ -7,4 +7,5 @@
     <color name="black">#000</color>
     <color name="link">#0645AD</color>
     <color name="light_blue">#39EAFF</color>
+    <color name="bgBottomNavigation">#fe485a</color>
 </resources>

@@ -17,6 +17,7 @@ import com.example.fdc_neil.stylishgrabs.ADAPTERS.ItemsAdapter;
 import com.example.fdc_neil.stylishgrabs.ADAPTERS.ViewPagerAdapter;
 import com.example.fdc_neil.stylishgrabs.MODELS.Items;
 import com.example.fdc_neil.stylishgrabs.USER.ProfileActivity;
+import com.google.firebase.auth.FirebaseAuth;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.annotations.MarkerOptions;
 import com.mapbox.mapboxsdk.camera.CameraUpdateFactory;
@@ -84,9 +85,16 @@ public class MainActivity extends AppCompatActivity /*implements OnMapReadyCallb
         dots = new ImageView[dotscount];
 
         itemsAdapter = new ItemsAdapter(items, getApplicationContext());
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext()) {
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        };
+
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(itemsAdapter);
+
 
         prepareItemsData();
 
