@@ -85,12 +85,7 @@ public class MainActivity extends AppCompatActivity /*implements OnMapReadyCallb
         dots = new ImageView[dotscount];
 
         itemsAdapter = new ItemsAdapter(items, getApplicationContext());
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext()) {
-            @Override
-            public boolean canScrollVertically() {
-                return false;
-            }
-        };
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(itemsAdapter);

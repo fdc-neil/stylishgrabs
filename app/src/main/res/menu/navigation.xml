@@ -2,23 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_shop"
-        android:icon="@mipmap/house"
-        android:title="@string/home_title" />
+        android:id="@+id/striped_shirt"
+        android:icon="@drawable/pirate_shirt"
+        android:title="@string/stripeshirtsFragment" />
 
     <item
-        android:id="@+id/navigation_gifts"
-        android:icon="@mipmap/store"
-        android:title="@string/store_title" />
+        android:id="@+id/polo"
+        android:icon="@drawable/polo"
+        android:title="@string/poloFragment" />
 
     <item
-        android:id="@+id/navigation_cart"
-        android:icon="@mipmap/info"
-        android:title="@string/info_title" />
+        android:id="@+id/sweat_shorts"
+        android:icon="@drawable/shorts"
+        android:title="@string/sweatshortsFragment" />
 
     <item
-        android:id="@+id/navigation_profile"
-        android:icon="@mipmap/users"
-        android:title="@string/profile_title" />
+        android:id="@+id/jogger_pants"
+        android:icon="@drawable/trouser"
+        android:title="@string/joggerpantsFragment" />
+
+    <item
+        android:id="@+id/trouser"
+        android:icon="@drawable/trousers"
+        android:title="@string/trousersFragment" />
 
 </menu>

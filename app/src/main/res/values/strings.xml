@@ -28,6 +28,11 @@
     <string name="trousers">TROUSERS</string>
     <string name="joggerpants">JOGGER PANTS</string>
     <string name="polo">POLO</string>
+    <string name="stripeshirtsFragment">T-Shirts</string>
+    <string name="sweatshortsFragment">Shorts</string>
+    <string name="trousersFragment">Trousers</string>
+    <string name="joggerpantsFragment">Pants</string>
+    <string name="poloFragment">Polo</string>
     <string name="mapbox_access_token">pk.eyJ1Ijoic3R5bGlzaGdyYWJzIiwiYSI6ImNqbnR6cnlwaTA1d24zcm1qd2VqenM2ZnkifQ.5MCNUZSg8BJOchgOnJyPQg</string>
     <string name="contactus">Contact Us</string>
     <string name="phoneNumber">+639081680079</string>
@@ -68,6 +73,15 @@
     <string name="info_title">Info</string>
     <string name="profile_title">Profile</string>
     <string name="price">250.00</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addtocart">Add to Cart</string>
+    <string name="itemRating">Rating</string>
+    <string name="itemSize">Freesize (M Fit to L)</string>
+    <string name="itemSizeTitle">Size</string>
+    <string name="itemFabricTitle">Fabric</string>
+    <string name="itemFabric">Cotton Spandex</string>
 
 
 </resources>
